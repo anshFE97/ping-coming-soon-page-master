@@ -1,0 +1,199 @@
+:root {/*### Primary*/
+
+--Blue: hsl(223, 87%, 63%);
+
+/*### Secondary*/
+
+--Pale-Blue: hsl(223, 100%, 88%);
+--Light-Red: hsl(354, 100%, 66%);
+
+/*### Neutral*/
+
+--Gray: hsl(0, 0%, 59%);
+--Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 20px;
+    font-family: "Libre Franklin", sans-serif;
+    height: calc(100vh - 1px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.main .above {
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.main .above h1 {
+    margin-top:  2rem;
+    font-weight: lighter;
+    color: var(--Gray);
+    margin-bottom: 1rem;
+}
+.main .above h1 .up {
+    font-weight: 700;
+    color: var(--Very-Dark-Blue);
+}
+
+.main .above p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.main .above .enter {
+    position: relative;
+    text-align: center;
+
+}
+
+
+.main .above .enter .mail {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 25px;
+}
+
+
+
+.main .above .enter .error {
+    display: none;
+    font-size: 0.6rem;
+    color: var(--Light-Red);
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.main .above .enter .notify {
+    display: block;
+    width: 20rem;
+    margin: 2rem 3rem;
+    text-align: center;
+    height: 3rem;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--Blue);
+    color: #fff;
+    font-weight: 600;
+
+
+}
+ 
+
+
+.main .middle img {
+    max-width: 100%;
+    padding: 1rem;
+
+}
+
+.main .below ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.main .below ul li:hover {
+    background-color: blue;
+}
+
+.main .below ul li a:hover {
+    color: white;
+}
+
+.main .below ul li {
+    margin: 5px;
+    padding: 8px 12px;
+    color: var(--Blue);
+    border: 1px solid var(--Gray);
+    border-radius: 50%;
+}
+
+.main .below p {
+    text-align: center;
+    color: var(--Gray);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+
+.active {
+    display: block !important;
+}
+
+.border {
+    border: 2px solid var(--Light-Red) !important;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (min-width: 500px) {
+    body {
+        width: 100%;
+        height: calc( 100vh - 1px);
+        padding: 0;
+        display: grid;
+    }
+
+    .main .above h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .main .above .enter {
+        position: relative;
+        text-align: center;
+        margin-bottom: 4rem;
+        margin-inline: 20%;
+    
+    }
+    .main .above .enter .error {
+        display: none;
+        font-size: 0.6rem;
+        color: var(--Light-Red);
+        font-weight: 600;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-right: 6rem;
+        
+    }
+    
+
+    
+    
+    .main .above .enter .notify {
+        position: absolute;
+        right: -3rem;
+        top: -2rem;
+        width: 10rem;
+        margin: 2rem 3rem;
+    }
+
+
+    
+}
